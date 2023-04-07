@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f8f8;
+    font-family: 'Dosis', sans-serif;
+}
+
+.main-con {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: 680px) {
+        .about-view {
+            // background-color: #ffbaba79;
+            padding: 20px !important;
+            margin-top: -60px !important;
+            width: 100%;
+        }
+
+        .my-3d-view {
+            margin-top: -10px !important;
+        }
+    }
+
+    .about-view {
+        // background-color: #ffbaba79;
+        margin: auto;
+        margin-top: -125px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 500px;
+
+        .main-title {
+            font-size: 2rem;
+            font-weight: 500;
+            margin: 10px 0;
+        }
+
+        .main-text {
+            margin: 8px 0;
+            font-size: 1.3rem;
+        }
+
+        a{
+            color: rgb(47, 109, 224);
+            text-decoration: none;
+        
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+    .my-3d-view {
+        width: 100%;
+        margin: auto;
+        margin-top: -50px;
+        // background-color: #b1ffbe;
+    }
+
+}
+
+.dark{
+    color: #fff;
+    background-color: #141414;  
+    
+    a{
+        color: rgb(72, 173, 255) !important;
+    }
+}
