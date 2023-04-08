@@ -32,7 +32,7 @@ const load3dView = () => {
     load3dModel(scene, camera)
     setLightAmbientLight(scene, 0xc1c1c1c)
     setDirectionalLight(scene, 0xffffff, 1)
-    // setOrbitControls(camera, renderer)
+    setOrbitControls(camera, renderer)
 
 
     window.addEventListener("resize", () => { // window resize event
